@@ -18,7 +18,7 @@ var pkg = require('../package');
 var MongoClient = mongodb.MongoClient;
 var port = process.env.PORT || 3232;
 var app = express();
-var dbHost = process.env.MONGO_HOST || 'localhost';
+var dbHost = process.env.MONGODB_PORT_27017_TCP_ADDR || 'localhost';
 var dbName = 'inhouse';
 var db;
 
